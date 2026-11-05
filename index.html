@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex レジェンドスキルおすすめ（非公式・ファン用）</title>
+<meta name="description" content="Apex Legends Season 31 Cipher の非公式ファン向けアップグレード左右おすすめ。EA公式ではありません。">
+<meta name="robots" content="noindex">
+<style>
+:root {
+  --blue: #2F6FED;
+  --blue-bg: #E8F0FE;
+  --orange: #E67E22;
+  --orange-bg: #FFF3E6;
+  --grey: #6B7280;
+  --grey-bg: #F3F4F6;
+  --text: #111827;
+  --muted: #4B5563;
+  --border: #D1D5DB;
+  --card: #FFFFFF;
+  --page: #F8FAFC;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: var(--page);
+  color: var(--text);
+  line-height: 1.5;
+}
+.wrap { max-width: 960px; margin: 0 auto; padding: 12px 14px 48px; }
+header.banner {
+  background: var(--grey-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+}
+header.banner h1 { margin: 0 0 6px; font-size: 1.25rem; }
+header.banner p { margin: 0; font-size: 0.85rem; color: var(--muted); }
+.badge-unofficial {
+  display: inline-block;
+  background: var(--grey);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.search-box {
+  border: 3px solid var(--blue);
+  background: var(--blue-bg);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
+input[type="search"], select {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.filters button {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.filters button.active {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  font-weight: 700;
+}
+.count { font-size: 0.9rem; font-weight: 600; color: var(--muted); }
+.one-answer {
+  border: 3px solid var(--blue);
+  background: var(--blue-bg);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+.one-answer .name { font-size: 1.35rem; font-weight: 800; margin-bottom: 8px; }
+.one-answer .line { font-size: 1.2rem; font-weight: 800; margin: 4px 0; }
+.split-tag { color: var(--orange); font-size: 0.85rem; font-weight: 700; margin-left: 6px; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 18px; }
+table { width: 100%; border-collapse: collapse; background: var(--card); min-width: 520px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); font-size: 0.92rem; vertical-align: top; }
+th { background: var(--grey-bg); position: sticky; top: 0; }
+td.rec { font-weight: 700; color: var(--blue); }
+td.warn { color: var(--orange); font-weight: 700; }
+.callouts { display: flex; flex-direction: column; gap: 8px; margin: 14px 0; }
+.callout {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.callout.info { background: var(--blue-bg); border-color: #B6CFFF; }
+.callout.warn { background: var(--orange-bg); border-color: #F5C48A; }
+.callout strong { display: block; margin-bottom: 4px; }
+.cards { display: flex; flex-direction: column; gap: 14px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+}
+.card-head { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.card-title { font-size: 1.2rem; font-weight: 800; }
+.card-sub { font-size: 0.85rem; color: var(--muted); }
+.pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--orange-bg);
+  color: var(--orange);
+  border: 1px solid #F5C48A;
+}
+.summary {
+  border: 2px solid var(--blue);
+  background: var(--blue-bg);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.summary .line { font-size: 1.1rem; font-weight: 800; }
+.note {
+  background: var(--grey-bg);
+  color: var(--muted);
+  font-size: 0.8rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.tier { margin-bottom: 12px; }
+.tier-head { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+.tier-head .t { font-weight: 700; margin-right: auto; }
+.tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+.tag.blue { background: var(--blue); color: #fff; }
+.tag.orange { background: var(--orange); color: #fff; }
+.tag.grey { background: var(--grey); color: #fff; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 560px) {
+  .choices { grid-template-columns: 1fr; }
+}
+.choice {
+  border-radius: 12px;
+  padding: 10px;
+  min-height: 110px;
+}
+.choice.on {
+  border: 3px solid var(--blue);
+  background: var(--blue-bg);
+}
+.choice.off {
+  border: 1px solid var(--border);
+  background: var(--grey-bg);
+  opacity: 0.82;
+}
+.choice.alt {
+  border: 2px solid var(--orange);
+  background: var(--orange-bg);
+  opacity: 1;
+}
+.choice .side {
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.choice.on .side { font-size: 1.35rem; color: var(--blue); }
+.choice.off .side { font-size: 0.95rem; color: var(--grey); }
+.choice .cname { font-weight: 700; margin-bottom: 2px; }
+.choice.on .cname { font-size: 1rem; }
+.choice .ceff { font-size: 0.82rem; color: var(--muted); }
+.meta { font-size: 0.82rem; color: var(--muted); margin-top: 8px; }
+footer {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+footer ul { padding-left: 1.1em; margin: 8px 0; }
+footer a { color: var(--blue); }
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="banner">
+    <span class="badge-unofficial">非公式・ファン用</span>
+    <h1>Apex レジェンドスキルおすすめ</h1>
+    <p>Season 31 Cipher 向けの非公式まとめです。EA / Respawn / Apex Legends 公式サイトではありません。Grok・Cursor のログインは不要です。</p>
+  </header>
+
+  <section class="search-box" id="search">
+    <label for="q">レジェンドを検索（いちばん上）</label>
+    <input id="q" type="search" placeholder="名前を入力：クリプト / パスファインダー / Pathfinder / Recon…" autocomplete="off">
+    <label for="cls">クラスで絞る</label>
+    <select id="cls">
+      <option value="すべて">すべて</option>
+      <option>Assault</option>
+      <option>Skirmisher</option>
+      <option>Recon</option>
+      <option>Support</option>
+      <option>Controller</option>
+    </select>
+    <div style="font-size:0.85rem;font-weight:600;margin-bottom:4px;">フィルタ</div>
+    <div class="filters" id="filters" role="group" aria-label="フィルタ"></div>
+    <div class="count" id="count"></div>
+  </section>
+
+  <section id="answer">
+    <h2 style="font-size:1.05rem;margin:0 0 8px;">すぐわかる答え</h2>
+    <p style="font-size:0.85rem;color:var(--muted);margin:0 0 10px;">※＝場面で分かれる主推奨。青＝おすすめ／橙＝分かれる／灰＝非推奨。</p>
+    <div id="one" class="one-answer hidden"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>レジェンド</th><th>Lv2</th><th>Lv3</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="callouts" id="premise">
+    <div class="callout info"><strong>データ</strong><span id="premise-data"></span></div>
+    <div class="callout warn"><strong>プロ実戦（ALGS）の左右データ</strong>ALGS / ALS Upgrades chart などにレジェンド別の左右採用率は未公開（または空）。推測でALGS％は作っていません。各カードに「プロ/ALGS: 左右データなし」と明記しています。</div>
+    <div class="callout info"><strong>代わりに使っているもの</strong>コミュニティ票（apexlegendsupgrades.com・S31未変更カードのみ）＋公式ノート／wiki／X初期所感。Crypto／Lifeline／Revenantの旧票は破棄。</div>
+  </section>
+
+  <section>
+    <h2 style="font-size:1.05rem;">詳細カード</h2>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <footer>
+    <p><strong>注意:</strong> 本ページは非公式ファン用ツールです。Electronic Arts / Respawn Entertainment / Apex Legends とは無関係で、公式を装うものではありません。</p>
+    <p>データ取得日: <span id="fetched"></span>（Asia/Tokyo）</p>
+    <p>推奨の根拠は主にコミュニティ投票サイトの％です。ALGS大会の左右アップグレード採用率は未公開のため記載していません。</p>
+    <p>色覚対応: 青・橙・灰のみ（赤緑は未使用）。</p>
+    <p>ソース例:</p>
+    <ul>
+      <li><a href="https://www.ea.com/games/apex-legends/apex-legends/news/cipher-patch-notes" rel="noopener">Cipher Patch Notes</a></li>
+      <li><a href="https://www.ea.com/games/apex-legends/apex-legends/news/31-0-designers-notes" rel="noopener">Cipher Designer's Notes</a></li>
+      <li><a href="https://apexlegendsupgrades.com/" rel="noopener">Community upgrade votes</a></li>
+      <li><a href="https://apexlegendsstatus.com/algs/competitive-meta" rel="noopener">ALS ALGS competitive-meta（Upgrades空）</a></li>
+    </ul>
+  </footer>
+</div>
+<script>
+const DATA = {"fetchedAt": "2026-11-06 07:16 JST", "proLr": "プロ/ALGS: 左右データなし（ALS Upgrades空・大会左右％未公開）", "legends": [{"id": "alter", "name": "アルター", "nameEn": "Alter", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Eye to Another World", "effect": "全Reconクラスパークを得る"}, "right": {"name": "Controller of Worlds", "effect": "全Controllerクラスパークを得る"}, "rec": "right", "split": true, "certainty": "高", "reason": "コミュニティ票でController 77%。リング・ハードライトが強い", "altNote": "偵察が誰もいない編成なら左 Eye to Another World", "usage": "票 Controller 77% / Recon 23%"}, "l3": {"left": {"name": "Staring into the Void", "effect": "Void Passageのスキャン時間+15秒"}, "right": {"name": "Void Breacher", "effect": "味方Void Passage使用で移動速度UP＋リロード"}, "rec": "right", "certainty": "高", "reason": "票 Void Breacher 77%。戦闘中の移動・リロードが毎回効く", "usage": "票 Void Breacher 77%"}}, {"id": "ash", "name": "アッシュ", "nameEn": "Ash", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "note": "S31公式にアップグレード変更なし", "l2": {"left": {"name": "Longer Reach", "effect": "Phase Breach射程+25m"}, "right": {"name": "Ultimate Cooldown", "effect": "Phase Breach CD-30秒"}, "rec": "left", "certainty": "高", "reason": "票 Longer Reach 67%。射程の方が採用多数", "usage": "票 Reach 67% / CD 33%"}, "l3": {"left": {"name": "Twin Snares", "effect": "Arc Snare+1チャージ"}, "right": {"name": "Greedy Snare", "effect": "Snare持続5→15秒・複数捕獲可"}, "rec": "left", "certainty": "高", "reason": "票 Twin Snares 82%。チャージ増が圧倒的", "usage": "票 Twin Snares 82%"}}, {"id": "axle", "name": "アクスル", "nameEn": "Axle", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "note": "S31はキット弱体。L3は票サイトがDrone Deployer表記（wikiはJump Gateのまま→票側を採用）", "l2": {"left": {"name": "Sliding Shooter", "effect": "スライド射撃弾がマガジンではなく所持弾から消費"}, "right": {"name": "Long Haul", "effect": "Nitro Gate効果3→5秒"}, "rec": "left", "split": true, "certainty": "中", "reason": "票 Sliding Shooter 71%。持続回復したいなら右", "altNote": "Gate持続を戻したいなら右 Long Haul", "usage": "票 Sliding Shooter 71% / Long Haul 29%"}, "l3": {"left": {"name": "Drone Deployer", "effect": "KickstartのUlt CD短縮（票サイト表記・wikiはJump Gate未更新）"}, "right": {"name": "Super Slider", "effect": "Gate CD25→20秒・設置上限2→3"}, "rec": "left", "certainty": "中", "reason": "票 Drone Deployer 56%。僅差。クライアント表記は要確認", "usage": "票 Drone Deployer 56% / Super Slider 44%"}}, {"id": "ballistic", "name": "バリスティック", "nameEn": "Ballistic", "cls": "Assault", "s31Change": false, "conf": "votes", "note": "S30基準カード＋コミュニティ票", "l2": {"left": {"name": "Extra Bullet", "effect": "Whistler+1チャージ"}, "right": {"name": "Trap Mode", "effect": "Whistler持続延長・ダメージ増"}, "rec": "right", "certainty": "高", "reason": "票 Trap Mode 73%", "usage": "票 Trap Mode 73%"}, "l3": {"left": {"name": "Killing Time", "effect": "Tempest持続30→45秒"}, "right": {"name": "Quiet Time", "effect": "Whistler命中でサイレンス"}, "rec": "right", "certainty": "高", "reason": "票 Quiet Time 69%", "usage": "票 Quiet Time 69%"}}, {"id": "bangalore", "name": "バンガロール", "nameEn": "Bangalore", "cls": "Assault", "s31Change": false, "conf": "votes", "note": "S30基準カード＋コミュニティ票", "l2": {"left": {"name": "Electric Smoke", "effect": "スモークが敵デプロイアブルに高ダメージ"}, "right": {"name": "Cover Me!", "effect": "味方スモーク内HP回復＋Double Time敵を自動ピン"}, "rec": "left", "certainty": "高", "reason": "票 Electric Smoke 82%", "usage": "票 Electric Smoke 82%"}, "l3": {"left": {"name": "ECM Payload", "effect": "Rolling Thunder強化・デプロイ破壊"}, "right": {"name": "Medal of Honor", "effect": "蘇生高速＋倒れた味方へDouble Time"}, "rec": "left", "certainty": "高", "reason": "票 ECM Payload 74%", "usage": "票 ECM Payload 74%"}}, {"id": "bloodhound", "name": "ブラッドハウンド", "nameEn": "Bloodhound", "cls": "Recon", "s31Change": false, "conf": "votes", "note": "S30でUltがAllfather's Cloakに変更済み（wiki）", "l2": {"left": {"name": "Hidden Sight", "effect": "UltでTacリフレッシュ。Cloak中Tac視覚を敵から隠す"}, "right": {"name": "Bird's Eye", "effect": "White Ravenが別スクの最寄り2敵へ分裂"}, "rec": "left", "certainty": "高", "reason": "票 Hidden Sight 72%。新Ult連携", "usage": "票 Hidden Sight 72%"}, "l3": {"left": {"name": "Hunter's Agility", "effect": "Eye of the Allfather高速化・CD-5秒"}, "right": {"name": "True Predator", "effect": "射撃でCloakが切れず一時中断のみ"}, "rec": "left", "certainty": "中", "reason": "票 Hunter's Agility 56%（僅差）。Tac回転寄り", "usage": "票 Agility 56% / Predator 44%"}}, {"id": "catalyst", "name": "カタリスト", "nameEn": "Catalyst", "cls": "Controller", "s31Change": false, "conf": "s30-baseline", "note": "票サイトのカード配置がwikiと不一致のため票は参考外。S30基準で判断", "l2": {"left": {"name": "Hidden Spikes", "effect": "休眠Piercing Spikesを隠す"}, "right": {"name": "Sole Piercer", "effect": "スパイク発動2倍速・ダメージ15→20"}, "rec": "right", "certainty": "中", "reason": "発動速度とダメージはファイトで毎回効く（票サイト不一致のため確度中）"}, "l3": {"left": {"name": "Ferro-Door", "effect": "Barricadeで壊れたドアを再建"}, "right": {"name": "Resilient Veil", "effect": "Dark Veil持続15→20秒"}, "rec": "right", "certainty": "中", "reason": "Veil延長の方が建物外でも使える"}}, {"id": "caustic", "name": "コースティック", "nameEn": "Caustic", "cls": "Controller", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Extra Traps", "effect": "Nox Trap+1チャージ・設置上限+2"}, "right": {"name": "Breathe It In", "effect": "ガス内で1HP/秒回復"}, "rec": "left", "certainty": "高", "reason": "票 Extra Traps 64%", "usage": "票 Extra Traps 64%"}, "l3": {"left": {"name": "Particle Diffuser", "effect": "Nox Gas Grenade半径+50%"}, "right": {"name": "Gas Fighter", "effect": "ガス内でTrapリチャージ300%高速"}, "rec": "right", "certainty": "高", "reason": "票 Gas Fighter 70%。ガス内でのTac回転", "usage": "票 Gas Fighter 70%"}}, {"id": "conduit", "name": "コンジット", "nameEn": "Conduit", "cls": "Support", "s31Change": false, "conf": "s30-baseline", "note": "票サイトのL2カード名が現行（Battpack等）と不一致→票は使わずS30基準", "l2": {"left": {"name": "Battpack", "effect": "バッテリー所持+1・デスボックスに残数表示"}, "right": {"name": "Bigger Jam", "effect": "Energy Barricade半径10→11m"}, "rec": "left", "certainty": "中", "reason": "バッテリー増は編成を問わず損しにくい"}, "l3": {"left": {"name": "Instant Barrier", "effect": "Radiant Transferのシールド一部を即時付与"}, "right": {"name": "Enduring Barrier", "effect": "被弾でシールド回復が中断されない"}, "rec": "right", "certainty": "中", "reason": "戦闘中のシールド持続の方が噛み合う"}}, {"id": "crypto", "name": "クリプト", "nameEn": "Crypto", "cls": "Recon", "s31Change": true, "conf": "official-s31", "note": "S31リワーク。旧票（Ally.MoveTo/Hackathon）は無効。11/4回収6s→0.7s", "l2": {"left": {"name": "Network Expansion", "effect": "Neurolink/EMP範囲+25%（30→37.5m）"}, "right": {"name": "Got Eyes On You", "effect": "敵マーク持続+4秒（8→12秒）"}, "rec": "right", "split": true, "certainty": "低", "reason": "公式がマークを新軸に。yamato347も青パーク右に言及。EMP特化なら左", "altNote": "ワンボタンEMP＋範囲なら左 Network Expansion（aiuoe7も議論）", "usage": "公開採用率なし（S31新）"}, "l3": {"left": {"name": "Power Coupling", "effect": "ビーコン／ドローンスキャンでUltチャージ"}, "right": {"name": "Charged Up", "effect": "ドローンバッテリー+10秒"}, "rec": "right", "split": true, "certainty": "低", "reason": "バッテリー制リワークに合うCharged Up。Ult回転なら左", "altNote": "EMP連打優先なら左 Power Coupling", "usage": "公開採用率なし（S31新）"}}, {"id": "fuse", "name": "ヒューズ", "nameEn": "Fuse", "cls": "Assault", "s31Change": false, "conf": "s30-baseline", "note": "票サイトのカード構成が現行表と不一致→票は使わずS30基準", "l2": {"left": {"name": "Pyro Techniques", "effect": "Motherlode爆発後8秒炎地帯"}, "right": {"name": "Knuckle Jumper", "effect": "自Knuckle横ジャンプで爆発ブースト"}, "rec": "left", "certainty": "中", "reason": "Ult強化の方がエリアコントロール向き"}, "l3": {"left": {"name": "Reignition", "effect": "爆発ダメージでUltリチャージ"}, "right": {"name": "Wreckless", "effect": "爆発セルフダメージ-50%"}, "rec": "left", "certainty": "中", "reason": "Ult回転は攻め回数を増やす"}}, {"id": "gibraltar", "name": "ジブラルタル", "nameEn": "Gibraltar", "cls": "Support", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Thunder Dome", "effect": "Dome侵入の最初の敵にスロー＋ダメージ"}, "right": {"name": "Healing Dome", "effect": "Dome+4秒・中で小回復2倍"}, "rec": "left", "certainty": "高", "reason": "票 Thunder Dome 91%", "usage": "票 Thunder Dome 91%"}, "l3": {"left": {"name": "Triple Bombardment", "effect": "Ult3チャージ・半径縮小"}, "right": {"name": "Fast Shotties", "effect": "ショットガンホルスター速度・ノックで自動リロード"}, "rec": "left", "certainty": "高", "reason": "票 Triple Bombardment 98%", "usage": "票 Triple Bombardment 98%"}}, {"id": "horizon", "name": "ホライゾン", "nameEn": "Horizon", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Gravity Boots", "effect": "空中入力で落下大幅加速"}, "right": {"name": "NEWT Scoot", "effect": "Lift離脱後ジャンプ長押しで緩降下"}, "rec": "left", "certainty": "高", "reason": "票 Gravity Boots 64%", "usage": "票 Gravity Boots 64%"}, "l3": {"left": {"name": "Conservation of Energy", "effect": "ソフト着地でシールド25回復"}, "right": {"name": "Knock Expert", "effect": "ノックでアビリティチャージ+1"}, "rec": "right", "certainty": "高", "reason": "票 Knock Expert 88%", "usage": "票 Knock Expert 88%"}}, {"id": "lifeline", "name": "ライフライン", "nameEn": "Lifeline", "cls": "Support", "s31Change": true, "conf": "official-s31", "note": "S31再編。旧票（Battpack等）は無効。MIRUi7が新カード名を整理", "l2": {"left": {"name": "Improved Flight", "effect": "滑空ハンドリング改善＋持続延長"}, "right": {"name": "Enhanced Radio", "effect": "DOC割当距離増加"}, "rec": "left", "certainty": "中", "reason": "Designer's Notesが滑空強化を明記。移動蘇生と相性", "usage": "公開採用率なし（S31新）"}, "l3": {"left": {"name": "Ultimate Cooldown", "effect": "D.O.C. Halo CD-60秒"}, "right": {"name": "Revive Shield", "effect": "蘇生中にDOCがシールド展開"}, "rec": "right", "split": true, "certainty": "中", "reason": "公式が旧蘇生盾を復活。クラッチ向きが無難。Halo連打なら左", "altNote": "Halo回転優先なら左 Ultimate Cooldown", "usage": "公開採用率なし（S31新）"}}, {"id": "loba", "name": "ローバ", "nameEn": "Loba", "cls": "Support", "s31Change": false, "conf": "votes", "note": "S31はTac/Ult CD弱体のみ。Pred分析ガイド（NeuralBoost）もWolf's Claws／Escape Artist。ALGS左右％は未公開", "l2": {"left": {"name": "Wolf's Claws", "effect": "テレポ後に加速＋武器出し超高速"}, "right": {"name": "Shopping Spree", "effect": "Black Market取得枠2→3"}, "rec": "left", "split": true, "certainty": "高", "reason": "票90%＋Predガイド既定。物資不足時のみ右", "altNote": "スクが物資不足なら右 Shopping Spree", "usage": "票 Wolf's Claws 90% ／ Predガイド同方向（ALGS左右％なし）"}, "l3": {"left": {"name": "Escape Artist", "effect": "テレポ後シールド25回復（被弾まで）"}, "right": {"name": "Brand New Bag", "effect": "味方全員に紫バッグ"}, "rec": "left", "split": true, "certainty": "高", "reason": "票89%＋Predガイド。白バッグ残なら右", "altNote": "味方バッグが白のままなら右 Brand New Bag", "usage": "票 Escape Artist 89% ／ Predガイド同方向（ALGS左右％なし）"}}, {"id": "mad-maggie", "name": "マッドマギー", "nameEn": "Mad Maggie", "cls": "Assault", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Gunrunning", "effect": "SMG/ピストル所持で移動高速"}, "right": {"name": "Fire Ball", "effect": "Wrecking Ballがマグマ＋炎ダメ半減"}, "rec": "left", "certainty": "高", "reason": "票 Gunrunning 81%", "usage": "票 Gunrunning 81%"}, "l3": {"left": {"name": "Drillslinger", "effect": "Riot Drill+1・持続-25%"}, "right": {"name": "Big Drill", "effect": "Drill幅・深さ+50%"}, "rec": "right", "certainty": "高", "reason": "票 Big Drill 64%", "usage": "票 Big Drill 64%"}}, {"id": "mirage", "name": "ミラージュ", "nameEn": "Mirage", "cls": "Support", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Renaissance Man", "effect": "全クラスのワールドインタラクト利用可"}, "right": {"name": "Boozle-Eye", "effect": "デコイ被弾で射撃者をスキャン"}, "rec": "left", "certainty": "高", "reason": "票 Renaissance Man 88%", "usage": "票 Renaissance Man 88%"}, "l3": {"left": {"name": "Me Two", "effect": "Psyche Out+1・同時2デコイ"}, "right": {"name": "Bamboozle Bonus", "effect": "バンブーズル成功でPsyche Outリセット"}, "rec": "left", "certainty": "高", "reason": "票 Me Two 75%", "usage": "票 Me Two 75%"}}, {"id": "newcastle", "name": "ニューキャッスル", "nameEn": "Newcastle", "cls": "Support", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Stronghold", "effect": "Castle Wall+500HP・電撃延長"}, "right": {"name": "Ready To Rumble", "effect": "蘇生で武器装填＋フル回復開始"}, "rec": "left", "certainty": "高", "reason": "票 Stronghold 80%", "usage": "票 Stronghold 80%"}, "l3": {"left": {"name": "Ultimate Savior", "effect": "Wall着弾味方に15秒シールド回復"}, "right": {"name": "Defensive Line", "effect": "Tac/Revive Shieldが敵をノックバック1回"}, "rec": "left", "certainty": "高", "reason": "票 Ultimate Savior 75%", "usage": "票 Ultimate Savior 75%"}}, {"id": "octane", "name": "オクタン", "nameEn": "Octane", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Thick Skin", "effect": "Stimセルフダメ-25%（20→15）"}, "right": {"name": "Squad Rush", "effect": "Launch Pad着地全員にStim"}, "rec": "left", "certainty": "中", "reason": "票 Thick Skin 53%（僅差）。自己耐久寄り", "usage": "票 Thick Skin 53% / Squad Rush 47%"}, "l3": {"left": {"name": "Daredevil", "effect": "HP低下でStim Surge延長（最大6秒）"}, "right": {"name": "Triple Jump", "effect": "Launch Padに3段ジャンプ"}, "rec": "right", "split": true, "certainty": "低", "reason": "票サイトは約50/50。Pad機動を主推奨", "altNote": "低HPデュエル寄りなら左 Daredevil", "usage": "票 約50/50"}}, {"id": "pathfinder", "name": "パスファインダー", "nameEn": "Pathfinder", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "note": "S31変更なし。Pred分析ガイド（NeuralBoost）もField Research／Feeling Zippy。ALGS左右％は未公開", "l2": {"left": {"name": "Field Research", "effect": "全Reconパーク"}, "right": {"name": "Ringmaster", "effect": "全Controllerパーク"}, "rec": "left", "split": true, "certainty": "高", "reason": "票65%＋Predガイド既定。既にReconがいるなら右", "altNote": "味方にReconがいるなら右 Ringmaster", "usage": "票 Field Research 65% ／ Predガイド同方向（ALGS左右％なし）"}, "l3": {"left": {"name": "Landing Gear", "effect": "空中制御改善・ハード着地回復高速"}, "right": {"name": "Feeling Zippy", "effect": "Zipline Gun+1・味方energized速度改善"}, "rec": "right", "certainty": "高", "reason": "票76%＋Predガイド（終盤2ジップ）。ALGS左右％は未公開", "usage": "票 Feeling Zippy 76% ／ Predガイド同方向（ALGS左右％なし）"}}, {"id": "rampart", "name": "ランパート", "nameEn": "Rampart", "cls": "Controller", "s31Change": false, "conf": "votes", "note": "S30でCombat Reserveにstowed reload追加", "l2": {"left": {"name": "Combat Reserve", "effect": "赤武器制限解除＋格納リロード系恩恵"}, "right": {"name": "Locked and Loaded", "effect": "Amped Cover裏でリロード高速・無限弾"}, "rec": "right", "certainty": "高", "reason": "票 Locked and Loaded 87%", "usage": "票 Locked and Loaded 87%"}, "l3": {"left": {"name": "Ramped Up", "effect": "Sheilaハンドリング/スピンアップ+20%"}, "right": {"name": "Rebuild Module", "effect": "被弾なし後にAmped Coverが再生"}, "rec": "right", "certainty": "高", "reason": "票 Rebuild Module 83%", "usage": "票 Rebuild Module 83%"}}, {"id": "revenant", "name": "レヴナント", "nameEn": "Revenant", "cls": "Assault", "s31Change": true, "conf": "official-s31", "note": "S31新カード。旧票（Ult CD等）は無効。ALSレジェンド使用率は急上昇（参考）", "l2": {"left": {"name": "Ever Lasting", "effect": "ノックでUlt延長+10秒"}, "right": {"name": "Try To Hide", "effect": "低HPマーカー持続2倍"}, "rec": "left", "certainty": "中", "reason": "公式Designer's Notesが新カードの軸にUlt延長を置く", "usage": "公開採用率なし（S31新）"}, "l3": {"left": {"name": "Silence", "effect": "Shadow Pounce着地で範囲サイレンス4秒"}, "right": {"name": "No Escape", "effect": "パッシブマーク時にTacリフレッシュ"}, "rec": "right", "split": true, "certainty": "中", "reason": "Revngeful（X）: Silenceは着地直撃が少なく一貫しにくい。無難はNo Escape", "altNote": "敵に飛び乗るスタイルなら左 Silence", "usage": "公開採用率なし（S31新）"}}, {"id": "seer", "name": "シア", "nameEn": "Seer", "cls": "Recon", "s31Change": false, "conf": "votes", "note": "S30でカード位置再編。Predメタでは高ピック（S30最終）", "l2": {"left": {"name": "Lasting Beats", "effect": "Exhibit離脱後も5秒ハイライト"}, "right": {"name": "Energizing Focus", "effect": "Tac命中でシールド25（非スタック）"}, "rec": "left", "certainty": "中", "reason": "票 Lasting Beats 58%（僅差）。情報持続寄り", "usage": "票 Lasting Beats 58%"}, "l3": {"left": {"name": "Home Base", "effect": "Exhibit内でTac CD8秒"}, "right": {"name": "Split Focus", "effect": "Focus of Attention+1チャージ"}, "rec": "right", "certainty": "高", "reason": "票 Split Focus 95%", "usage": "票 Split Focus 95%"}}, {"id": "sparrow", "name": "スパロー", "nameEn": "Sparrow", "cls": "Recon", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Hunt Target", "effect": "Tracker Dartマーク敵へ走ると加速"}, "right": {"name": "Extra Traps", "effect": "Dart+1・設置トラップ+1"}, "rec": "right", "certainty": "高", "reason": "票 Extra Traps 88%", "usage": "票 Extra Traps 88%"}, "l3": {"left": {"name": "Life Syphon", "effect": "Stinger BoltダメージでHP/シールド回復"}, "right": {"name": "Alternate Mode", "effect": "Stinger+2（計3）・パルス減・半径減"}, "rec": "right", "certainty": "高", "reason": "票 Alternate Mode 75%", "usage": "票 Alternate Mode 75%"}}, {"id": "valkyrie", "name": "ヴァルキリー", "nameEn": "Valkyrie", "cls": "Recon", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Eye in the Sky", "effect": "壁越しスキャン強化／LOSスキャン距離"}, "right": {"name": "Full Coverage", "effect": "Missile Swarm範囲改善・CD-5秒"}, "rec": "left", "certainty": "高", "reason": "票 Eyes in the Sky系 79%", "usage": "票 Eye/Eyes 79%"}, "l3": {"left": {"name": "Supersonic", "effect": "Skyward Dive起動大幅高速"}, "right": {"name": "Aerial Expert", "effect": "ジェット起動コスト減・水平速UP"}, "rec": "left", "certainty": "高", "reason": "票 Supersonic 89%。Ult起動高速が主流", "usage": "票 Supersonic 89%"}}, {"id": "vantage", "name": "ヴァンテージ", "nameEn": "Vantage", "cls": "Recon", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Controlling My Prey", "effect": "全Controllerパーク"}, "right": {"name": "Improved Mark", "effect": "Sniper's Mark強化（壁越し・HPバー）"}, "rec": "left", "certainty": "高", "reason": "票 Controlling My Prey 77%", "usage": "票 Controlling My Prey 77%"}, "l3": {"left": {"name": "Herd Tracker", "effect": "Spotter's Lensが敵チーム全員マーク"}, "right": {"name": "Sniper Cover", "effect": "ガシールド40→75HP"}, "rec": "left", "certainty": "高", "reason": "票 Herd Tracking 91%", "usage": "票 Herd Tracking 91%"}}, {"id": "wattson", "name": "ワットソン", "nameEn": "Wattson", "cls": "Controller", "s31Change": false, "conf": "votes", "l2": {"left": {"name": "Help is Here", "effect": "全Supportパーク"}, "right": {"name": "Ultimate Conductor", "effect": "ダメージ→Ultチャージ・ノックで50%バースト"}, "rec": "left", "split": true, "certainty": "高", "reason": "票 Help is Here 69%。Ult回転特化なら右", "altNote": "Ult回転特化なら右 Ultimate Conductor", "usage": "票 Help is Here 69%"}, "l3": {"left": {"name": "Energized Healer", "effect": "Syringe/Cellの回復2倍"}, "right": {"name": "Power Pylon", "effect": "Pylon HP/回復速度/容量2倍"}, "rec": "right", "certainty": "高", "reason": "票 Power Pylon 92%", "usage": "票 Power Pylon 92%"}}, {"id": "wraith", "name": "レイス", "nameEn": "Wraith", "cls": "Skirmisher", "s31Change": false, "conf": "votes", "note": "旧CD短縮はベースキット化済み", "l2": {"left": {"name": "Sixth Sense", "effect": "150m以内の新スクを警告"}, "right": {"name": "Phase Dome", "effect": "Rift入口にPhase Dome生成"}, "rec": "right", "certainty": "高", "reason": "票 Phase Dome 84%", "usage": "票 Phase Dome 84%"}, "l3": {"left": {"name": "Fast Phase", "effect": "Into the Void発動30%高速"}, "right": {"name": "Void Jumper", "effect": "Void持続4→6秒・フェーズ中二段ジャンプ"}, "rec": "right", "certainty": "高", "reason": "票でFast Phaseは31%止まり→Void Jumper側が主流", "usage": "票 Fast Phase 31%（対側優勢）"}}]};
+const FILTERS = ["すべて", "S31変化あり", "分かれるあり", "確度・高", "確度・低"];
+let flt = "すべて";
+
+function sideJa(s){ return s === "left" ? "左" : "右"; }
+function pick(t){ return t.rec === "left" ? t.left : t.right; }
+function confLabel(c){
+  if (c === "official-s31") return "公式S31＋wiki／X";
+  if (c === "wiki") return "wiki確認";
+  if (c === "votes") return "コミュニティ票＋wiki";
+  return "S30基準";
+}
+function certaintyClass(c){
+  if (c === "高") return "blue";
+  if (c === "中") return "orange";
+  return "grey";
+}
+function esc(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function filtered(){
+  const qq = document.getElementById("q").value.trim().toLowerCase();
+  const cls = document.getElementById("cls").value;
+  return DATA.legends.filter(l => {
+    if (cls !== "すべて" && l.cls !== cls) return false;
+    if (flt === "S31変化あり" && !l.s31Change) return false;
+    if (flt === "分かれるあり" && !(l.l2.split || l.l3.split)) return false;
+    if (flt === "確度・高" && !(l.l2.certainty === "高" || l.l3.certainty === "高")) return false;
+    if (flt === "確度・低" && !(l.l2.certainty === "低" || l.l3.certainty === "低")) return false;
+    if (!qq) return true;
+    return l.name.toLowerCase().includes(qq) || l.nameEn.toLowerCase().includes(qq) || l.cls.toLowerCase().includes(qq);
+  });
+}
+
+function choiceHtml(side, choice, on, alt){
+  const cls = on ? "choice on" : (alt ? "choice alt" : "choice off");
+  const badge = on ? '<span class="tag blue">おすすめ ✓</span>' : (alt ? '<span class="tag orange">場面用</span>' : '<span class="tag grey">非推奨</span>');
+  return `<div class="${cls}">
+    <div style="display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap;align-items:center;">
+      <div class="side">${side}</div>${badge}
+    </div>
+    <div class="cname">${esc(choice.name)}</div>
+    <div class="ceff">${esc(choice.effect)}</div>
+  </div>`;
+}
+
+function tierHtml(title, tier){
+  const leftOn = tier.rec === "left";
+  const rightOn = tier.rec === "right";
+  const usage = tier.usage ? esc(tier.usage) + " ／ " : "";
+  const alt = tier.altNote ? " ／ " + esc(tier.altNote) : "";
+  return `<div class="tier">
+    <div class="tier-head">
+      <span class="t">${esc(title)}</span>
+      <span class="tag blue">${sideJa(tier.rec)}おすすめ</span>
+      <span class="tag ${certaintyClass(tier.certainty)}">確度 ${esc(tier.certainty)}</span>
+      ${tier.split ? '<span class="tag orange">場面で分かれる</span>' : ""}
+    </div>
+    <div class="choices">
+      ${choiceHtml("左", tier.left, leftOn, !!tier.split && !leftOn)}
+      ${choiceHtml("右", tier.right, rightOn, !!tier.split && !rightOn)}
+    </div>
+    <div class="meta">${esc(DATA.proLr)}</div>
+    <div class="meta">${usage}${esc(tier.reason)}${alt}</div>
+  </div>`;
+}
+
+function cardHtml(l){
+  const l2 = pick(l.l2), l3 = pick(l.l3);
+  return `<article class="card" id="card-${esc(l.id)}">
+    <div class="card-head">
+      <div>
+        <div class="card-title">${esc(l.name)} <span style="color:var(--grey);font-weight:500;font-size:0.95rem;">${esc(l.nameEn)}</span></div>
+        <div class="card-sub">${esc(l.cls)} ／ ${esc(confLabel(l.conf))}</div>
+      </div>
+      ${l.s31Change ? '<span class="pill">アプデで変化あり</span>' : ""}
+    </div>
+    <div class="summary">
+      <div class="line">Lv2：${sideJa(l.l2.rec)}・${esc(l2.name)}${l.l2.split ? '<span class="split-tag">（主推奨）</span>' : ""}</div>
+      <div class="line">Lv3：${sideJa(l.l3.rec)}・${esc(l3.name)}${l.l3.split ? '<span class="split-tag">（主推奨）</span>' : ""}</div>
+    </div>
+    ${l.note ? `<div class="note">${esc(l.note)}</div>` : ""}
+    ${tierHtml("レベル2（450 EVO）", l.l2)}
+    ${tierHtml("レベル3（1,700 EVO）", l.l3)}
+  </article>`;
+}
+
+function render(){
+  const list = filtered();
+  document.getElementById("count").textContent = `表示 ${list.length} / ${DATA.legends.length}`;
+  const one = document.getElementById("one");
+  if (list.length === 1) {
+    const l = list[0];
+    const l2 = pick(l.l2), l3 = pick(l.l3);
+    one.classList.remove("hidden");
+    one.innerHTML = `<div class="name">${esc(l.name)} <span style="color:var(--grey);font-weight:500;font-size:1rem;">${esc(l.nameEn)}</span></div>
+      <div class="line">Lv2：${sideJa(l.l2.rec)}・${esc(l2.name)}${l.l2.split ? '<span class="split-tag">（主推奨）</span>' : ""}</div>
+      <div class="line">Lv3：${sideJa(l.l3.rec)}・${esc(l3.name)}${l.l3.split ? '<span class="split-tag">（主推奨）</span>' : ""}</div>`;
+  } else {
+    one.classList.add("hidden");
+    one.innerHTML = "";
+  }
+  document.getElementById("tbody").innerHTML = list.map(l => {
+    const l2 = pick(l.l2), l3 = pick(l.l3);
+    const c2 = l.l2.split ? "warn" : "rec";
+    const c3 = l.l3.split ? "warn" : "rec";
+    return `<tr>
+      <td>${esc(l.name)}（${esc(l.nameEn)}）</td>
+      <td class="${c2}">${sideJa(l.l2.rec)}・${esc(l2.name)}${l.l2.split ? " ※" : ""}</td>
+      <td class="${c3}">${sideJa(l.l3.rec)}・${esc(l3.name)}${l.l3.split ? " ※" : ""}</td>
+    </tr>`;
+  }).join("");
+  document.getElementById("cards").innerHTML = list.map(cardHtml).join("");
+}
+
+function initFilters(){
+  const box = document.getElementById("filters");
+  box.innerHTML = FILTERS.map(f => `<button type="button" data-f="${esc(f)}" class="${f===flt?"active":""}">${esc(f)}</button>`).join("");
+  box.addEventListener("click", e => {
+    const b = e.target.closest("button[data-f]");
+    if (!b) return;
+    flt = b.getAttribute("data-f");
+    [...box.querySelectorAll("button")].forEach(x => x.classList.toggle("active", x.getAttribute("data-f")===flt));
+    render();
+  });
+}
+
+document.getElementById("fetched").textContent = DATA.fetchedAt;
+const high = DATA.legends.filter(l => l.l2.certainty==="高" || l.l3.certainty==="高").length;
+document.getElementById("premise-data").textContent =
+  `${DATA.fetchedAt} ／ Season 31 Cipher（開幕 2026-11-03）／ HF 2026-11-04。収録 ${DATA.legends.length}。確度「高」を含むレジェンド ${high}。`;
+initFilters();
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("cls").addEventListener("change", render);
+render();
+</script>
+</body>
+</html>
